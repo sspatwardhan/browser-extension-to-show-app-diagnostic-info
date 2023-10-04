@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tenable-CS Diagnostics</title>
+    <meta charset="utf-8">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="tenable-cs-ext-container" style="height: 700px; width: 800px; border: thick salmon;">
+        <div>
+            <span class="no-bullets" id="yourIPv4">Your IPv4: <span style="font-style: italic; font-size: small;"></span><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span>
+            <button id="tcsButton" class="titleButton" style="text-align: center; margin-left: 120px;"><i class="fa fa-globe"></i> Tenable-CS Diagnostics</button>
+            <button id="splunkLogsButton" style="margin-left: -35px; border: none; outline: none; background-color: transparent;"><i class="fa fa-external-link titleButton" aria-hidden="true"></i> Logs</button>
+        </div>
+        <div id="snackbar">copied to the clipboard</div>
+        <p style="color:crimson; font-size: medium; font-style: italic;" id="infoBanner"><i class="fa fa-info-circle" aria-hidden="true"></i> Login to https://cloud.tenable.com and open the extension while being on the same tab<br></p>
+        <ul class="no-bullets">
+            <div class="featureFlagFields importantLabel" style="padding-bottom: 10px;">
+                <input id="featureFlagName" type="input" placeholder="Start typing flag name.." value="" style="text-align: center; font-weight: bold; height: 25px; width: 400px; margin-right: 10px;">
+                <span id="featureFlagValue" class="flagValueLabel" style="text-align: center; border: none; height: 25px; width: auto; margin-left: 10px; margin-right: 10px; border-radius:10px">Please set flag name first</span>
+                <span id="featureFlagAge" class="flagValueLabel" hidden style="text-align: center; border: none; height: 25px; width: auto; margin-left: 10px; margin-right: 10px; border-radius:10px">Please set flag name first</span>
+                <span style="text-align: center; border: none; height: 25px; width: auto; margin-left: 10px; margin-right: 10px; border-radius:10px">
+                    <button id="featureFlagButton" hidden style="margin-left: -15px; border: none; outline: none; background-color: transparent;"><i class="fa fa-external-link button-10" aria-hidden="true"></i></button>
+                </span>
+            </div>
+            <li class="importantLabel" id="containerID">Container ID: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <li class="importantLabel" id="containerSite">Container Site: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <li id="containerRegion">Container Region: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin  fa-2x fa-fw"></i></span></li>
+            <li id="tcsApiToken">API Token: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <li id="session">Session Token: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <li id="currentUserID">Current User ID: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <li id="integratedSCMs">Integrated SCMs: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <li id="discoveredResources">Resources: <span style="font-style: italic; font-size: small;"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <li class="importantLabel" id="serviceVersion">Service versions: <span style="font-style: italic; font-size: small;"></span><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></span></li>
+            <div class="tcsGptFields importantLabel" style="padding-bottom: 10px;">
+                <textarea style="padding: 3px;" id="tcsQuestion" rows="1" cols="80" placeholder="Have question related to Tenable Cloud Security? type and press Enter"></textarea>
+            </div>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
