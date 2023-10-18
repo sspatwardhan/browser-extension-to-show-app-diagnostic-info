@@ -1,16 +1,16 @@
 {
-    "name": "Tenable-CS Diagnostics",
+    "name": "CS Diagnostics",
     "version": "5.0.0",
-    "description": "Tenable-CS Diagnostics",
+    "description": "CS Diagnostics",
     "manifest_version": 3,
     "author": "Spat - Saurabh Patwardhan",
     "action":{
         "default_popup": "index.html",
-        "default_title": "Tenable-CS Diagnostics"
+        "default_title": "CS Diagnostics"
     },
-    "icons": { "16": "Tenable-Iris2021.png",
-        "48": "Tenable-Iris2021.png",
-       "128": "Tenable-Iris2021.png" },
+    "icons": { "16": "tcs_icon.png",
+        "48": "tcs_icon.png",
+       "128": "tcs_icon.png" },
     "host_permissions": ["http://*/*", "https://*/*"],
     "permissions": [ "tabs","contextMenus","activeTab","storage","scripting" ]
 }
