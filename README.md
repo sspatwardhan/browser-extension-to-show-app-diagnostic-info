@@ -21,4 +21,4 @@ Chrome/Edge extension to show diagnostic info from a Cloud Security Account
 - click on the extension
 
 
-Author - Spat (Saurabh Patwardhan)
+Author - Saurabh Patwardhan
