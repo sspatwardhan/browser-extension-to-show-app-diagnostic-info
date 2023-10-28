@@ -19,6 +19,8 @@ Chrome/Edge extension to show diagnostic info from a Cloud Security Account
 # Usage
 - Login to the cloud security console
 - click on the extension
+- <img width="805" alt="image" src="https://github.com/sspatwardhan/browser-extension-to-show-app-diagnostic-info/assets/67895981/a87142ea-d7da-4ff6-ab5d-26f4295d2cd6">
+
 
 
 Author - Saurabh Patwardhan
